@@ -1,0 +1,174 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="1.7.35" exportTime="Sun Dec 16 22:27:50 CST 2018">
+  <item>
+    <time>Sun Dec 16 22:04:42 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:4004/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>4004</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET / HTTP/1.1
+Host: 140.110.112.32:4004
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>362</responselength>
+    <mimetype>XML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 16 Dec 2018 14:04:42 GMT
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+Content-Length: 169
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<pre>
+ ____________
+| NO FLAG QQ |
+ ------------
+      \   ^__^
+       \  (oo)\_______
+          (__)\       )\/\
+              ||----w |
+              ||     ||
+</pre>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Dec 16 22:04:59 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:4004/.git]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>4004</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/.git]]></path>
+    <extension>git</extension>
+    <request base64="false"><![CDATA[GET /.git HTTP/1.1
+Host: 140.110.112.32:4004
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>301</status>
+    <responselength>554</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 301 Moved Permanently
+Date: Sun, 16 Dec 2018 14:04:59 GMT
+Server: Apache/2.2.15 (CentOS)
+Location: http://140.110.112.32:4004/.git/
+Content-Length: 322
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://140.110.112.32:4004/.git/">here</a>.</p>
+<hr>
+<address>Apache/2.2.15 (CentOS) Server at 140.110.112.32 Port 4004</address>
+</body></html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sun Dec 16 22:04:59 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:4004/.git/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>4004</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/.git/]]></path>
+    <extension>git/</extension>
+    <request base64="false"><![CDATA[GET /.git/ HTTP/1.1
+Host: 140.110.112.32:4004
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>3026</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Date: Sun, 16 Dec 2018 14:04:59 GMT
+Server: Apache/2.2.15 (CentOS)
+Content-Length: 2858
+Connection: close
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /.git</title>
+ </head>
+ <body>
+<h1>Index of /.git</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="COMMIT_EDITMSG">COMMIT_EDITMSG</a></td><td align="right">20-May-2018 13:46  </td><td align="right"> 13 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="HEAD">HEAD</a></td><td align="right">20-May-2018 13:46  </td><td align="right"> 23 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="branches/">branches/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="config">config</a></td><td align="right">20-May-2018 13:46  </td><td align="right"> 92 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="description">description</a></td><td align="right">20-May-2018 13:46  </td><td align="right"> 73 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="hooks/">hooks/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="index">index</a></td><td align="right">20-May-2018 13:46  </td><td align="right">184 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="info/">info/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="logs/">logs/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="objects/">objects/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="refs/">refs/</a></td><td align="right">20-May-2018 13:46  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.15 (CentOS) Server at 140.110.112.32 Port 4004</address>
+</body></html>
+]]></response>
+    <comment></comment>
+  </item>
+</items>
