@@ -1,0 +1,757 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="1.7.35" exportTime="Sat Dec 22 17:33:19 CST 2018">
+  <item>
+    <time>Sat Dec 22 17:06:42 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET / HTTP/1.1
+Host: 140.110.112.32:31337
+Purpose: prefetch
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>647</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:06:42 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 480
+
+<html>
+<body>
+  <h1>BOT-Father</h1>
+  <p>Hey! I'm BOT-Father. I've created some bots. I hope you could enjoy playing with them.</p><br>
+  <a href="./inc/guard.php">GUARD-Bot</a><br>
+  <a href="./inc/1/joke.php">JOKE-Bot</a><br>
+  <a href="./inc/1/index.php">ECHO-Bot</a><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <p>To be completed</p>
+  <p>-----------------------</p>
+  <a href="./inc/flag.php">FLAG-Bot</a><br>
+  <a href="./inc/1/2/blab.php">BLAB-Bot</a>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:06:55 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/flag.php]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/flag.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc/flag.php HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>494</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:06:55 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 327
+
+<!DOCTYPE HTML PUBLIC>
+<html>
+<!-- Things to be completed... 
+     1. Beautify this page.
+     2. just complete everything.
+     ...
+-->
+<head>
+  <link href="1/" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>FLAG-Bot</h1>
+  <p>The flag is in my head... I know it... It's BreakALLCTF{ ... oF_Fo</p><br>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:06:56 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /inc/1/ HTTP/1.1
+Host: 140.110.112.32:31337
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://140.110.112.32:31337/inc/flag.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>433</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:06:55 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 266
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p></p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:06:57 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/index.php]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/index.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc/1/index.php HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>433</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:06:57 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 266
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p></p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:07:20 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /inc/1/ HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>433</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:07:19 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 266
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p></p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:07:34 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/index.php?query=test]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/index.php?query=test]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc/1/index.php?query=test HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>437</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:07:33 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 270
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>test</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:07:56 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/?query=test]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/?query=test]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /inc/1/?query=test HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>437</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:07:56 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 270
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>test</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:23:26 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/%3fquery=test/../]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/%3fquery=test/../]]></path>
+    <extension>/</extension>
+    <request base64="false"><![CDATA[GET /inc/1/%3fquery=test/../ HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>441</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:23:26 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 274
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>test/../</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:23:41 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/%3fquery=test/../../1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/%3fquery=test/../../1/]]></path>
+    <extension>/1/</extension>
+    <request base64="false"><![CDATA[GET /inc/1/%3fquery=test/../../1/ HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>446</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:23:41 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 279
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>test/../../1/</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:24:01 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/%3fquery=test/../../flag.php]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/%3fquery=test/../../flag.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc/1/%3fquery=test/../../flag.php HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>494</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:24:00 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 327
+
+<!DOCTYPE HTML PUBLIC>
+<html>
+<!-- Things to be completed... 
+     1. Beautify this page.
+     2. just complete everything.
+     ...
+-->
+<head>
+  <link href="1/" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>FLAG-Bot</h1>
+  <p>The flag is in my head... I know it... It's BreakALLCTF{ ... oF_Fo</p><br>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:24:01 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc/1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc/1/]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /inc/1/ HTTP/1.1
+Host: 140.110.112.32:31337
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://140.110.112.32:31337/inc/flag.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>433</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:24:00 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 266
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p></p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:24:32 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc%2f1%2f%3fquery=test%2f..%2f../flag.php]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc%2f1%2f%3fquery=test%2f..%2f../flag.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc%2f1%2f%3fquery=test%2f..%2f../flag.php HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>494</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:24:32 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 327
+
+<!DOCTYPE HTML PUBLIC>
+<html>
+<!-- Things to be completed... 
+     1. Beautify this page.
+     2. just complete everything.
+     ...
+-->
+<head>
+  <link href="1/" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>FLAG-Bot</h1>
+  <p>The flag is in my head... I know it... It's BreakALLCTF{ ... oF_Fo</p><br>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:24:33 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc%2f1%2f%3fquery=test%2f..%2f../1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc%2f1%2f%3fquery=test%2f..%2f../1/]]></path>
+    <extension>/1/</extension>
+    <request base64="false"><![CDATA[GET /inc%2f1%2f%3fquery=test%2f..%2f../1/ HTTP/1.1
+Host: 140.110.112.32:31337
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://140.110.112.32:31337/inc%2f1%2f%3fquery=test%2f..%2f../flag.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>446</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:24:32 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 279
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>test/../../1/</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:26:19 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../flag.php]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../flag.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../flag.php HTTP/1.1
+Host: 140.110.112.32:31337
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://140.110.112.32:31337/inc/1/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>494</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:26:18 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 327
+
+<!DOCTYPE HTML PUBLIC>
+<html>
+<!-- Things to be completed... 
+     1. Beautify this page.
+     2. just complete everything.
+     ...
+-->
+<head>
+  <link href="1/" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>FLAG-Bot</h1>
+  <p>The flag is in my head... I know it... It's BreakALLCTF{ ... oF_Fo</p><br>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Sat Dec 22 17:26:19 CST 2018</time>
+    <url><![CDATA[http://140.110.112.32:31337/inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../1/]]></url>
+    <host ip="140.110.112.32">140.110.112.32</host>
+    <port>31337</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../1/]]></path>
+    <extension>/1/</extension>
+    <request base64="false"><![CDATA[GET /inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../1/ HTTP/1.1
+Host: 140.110.112.32:31337
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://140.110.112.32:31337/inc%2f1%2f%3fquery=%7B%7D*%7Bbackground-color%3Ared%7D%2f..%2f../flag.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>467</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Sat, 22 Dec 2018 09:26:18 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Content-Length: 300
+
+<html>
+<head>
+</head>
+<body>
+  <h1>ECHO-Bot</h1>
+  <form action="index.php" method="get">
+    <input type="text" name="query"><br>
+    <input type="submit" value="sent">
+  </form>
+  <br><br><br>
+  <div id="re">
+    <h2>Echo</h2>
+    <p>{}*{background-color:red}/../../1/</p>
+  </div>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+</items>
